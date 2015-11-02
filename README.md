@@ -49,7 +49,7 @@ zImage	(https://s3-us-west-2.amazonaws.com/andbot/zImage)
 #### Download the upgrade system binary image
 There is a upgrade system in (https://s3-us-west-2.amazonaws.com/andbot/20151102_trusty.img.gz)
 
-#### dd command to converting and formatting according to the sdcard.
+#### dd command to converting and formatting according to the sdcard.(change the image name to trusty.img.gz)
 
 ```javascript
 $ sudo -s
