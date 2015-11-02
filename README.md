@@ -20,7 +20,7 @@ For build up the basic Andbot system. you have to prepare a micro SD card which 
 
 #### dd command to converting and formatting according to the sdcard.
 
-<<font color="red">Note: the SD card will be formatted and converted for Andbot systemfor Andbot system<font>>
+<font color="red">Note: the SD card will be formatted and converted for Andbot systemfor Andbot system</font>
 
 ```javascript
 $ sudo -s
