@@ -52,7 +52,8 @@ There is a upgrade system in (https://s3-us-west-2.amazonaws.com/andbot/20151102
 #### dd command to converting and formatting according to the sdcard.
 
 ```javascript
-$ sudo gzip -dc /warehouse/trusty.img.gz | dd of=/dev/mmcblk0p2 bs=1M
+$ sudo -s
+$ gzip -dc trusty.img.gz | dd of=/dev/sdb2 bs=1M
 ``` 
 
 After the process finished, reboot the system for useing the new version on the Andbot.
