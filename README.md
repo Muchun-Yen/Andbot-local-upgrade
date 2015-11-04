@@ -91,3 +91,9 @@ After the process finished, reboot the system for useing the new version on the 
 
 * Amazon Web Services
 	* https://aws.amazon.com
+	
+* A 16GB SD card full SD card binary images you can find it in the googld drive
+	* https://drive.google.com/file/d/0BzChPZVK641AQ01NZDhLLVNDM1k/view?usp=sharing
+
+* A	16GB SD card trusty partition image is in the path
+	* https://drive.google.com/file/d/0BzChPZVK641Aay1MNDFGMVlyUHM/view?usp=sharing
