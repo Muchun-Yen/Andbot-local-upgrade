@@ -77,7 +77,7 @@ You can download the upgrade binary image; 20151102_trusty.img.gz	(https://s3-us
 
 ```javascript
 $ sudo -s
-$ gzip -dc trusty.img.gz | dd of=/dev/sdb2 bs=1M
+$ gzip -dc 20151102_trusty.img.gz | dd of=/dev/sdb2 bs=1M
 ``` 
 
 After the process finished, reboot the system for useing the new version on the Andbot.
@@ -91,9 +91,18 @@ After the process finished, reboot the system for useing the new version on the 
 
 * Amazon Web Services
 	* https://aws.amazon.com
-	
-* A 16GB SD card full SD card binary images you can find it in the googld drive
-	* https://drive.google.com/file/d/0BzChPZVK641AQ01NZDhLLVNDM1k/view?usp=sharing
 
-* A	16GB SD card trusty partition image is in the path
+
+$ Download
+ 	
+* A 16GB SD card full SD card binary image 
+	* https://drive.google.com/file/d/0BzChPZVK641AQ0d2R1dNNGpKams/view?usp=sharing
+
+* A	16GB SD card trusty partition image 
 	* https://drive.google.com/file/d/0BzChPZVK641Aay1MNDFGMVlyUHM/view?usp=sharing
+
+* A 32GB SD card full SD card binary image
+	* https://mega.nz/#!6kcHDD6K!T2b6da-y4uHi-AXib0AjWIXi-gHNidbxASKLYxLF_4k
+	
+* A 32GB SD card trusty partition image
+	* https://drive.google.com/file/d/0Bzz9UIPYwzrVSFJiYU9kY3ZqdUU/view?usp=sharing	
