@@ -34,7 +34,7 @@ An Andbot system SD card format shows as this diagram.
 We provide full SD card binary images file which store in the Simple Storage Server (S3) in Amazon Web Services (AWS).
 
 #### Download the full SD card binary image
-You can download the full SD card binary image file 20151102-8g-sdcard.img.gz	(https://s3-us-west-2.amazonaws.com/andbot/20151102-8g-sdcard.img.gz)
+You can download the full SD card binary image file 20161221W-32g-ros-sdcard.img.gz (https://s3-ap-southeast-1.amazonaws.com/andbot-file/sdcard/20161221W-32g-ros-sdcard.img.gz)
 
 #### More than 8G bytes Micro SD card.   
 To make an Andbot system SD card. You have to prepare a micro SD card which unless 8G byte.
@@ -61,23 +61,23 @@ the BOOT and trusty partitions diagram shows as the diagram
 ![upgrade partition] (https://docs.google.com/drawings/d/1s72u6AeK68l58Sm4Pvh-Ni_Fyf29bVpfP3Vdk6rSwi0/pub?w=680&h=630) 
 
 #### if you want to upgrade the BOOT files, you can just replace those files in BOOT.
-boot.ini	(https://s3-us-west-2.amazonaws.com/andbot/boot.ini)
+boot.ini	(https://s3-ap-southeast-1.amazonaws.com/andbot-file/BOOT/boot.ini)
 
-exynos5422-odroidxu3.dtb	(https://s3-us-west-2.amazonaws.com/andbot/exynos5422-odroidxu3.dtb)
+exynos5422-odroidxu3.dtb	(https://s3-ap-southeast-1.amazonaws.com/andbot-file/BOOT/exynos5422-odroidxu3.dtb)
 
-uInitrd	(https://s3-us-west-2.amazonaws.com/andbot/uInitrd)
+uInitrd	(https://s3-ap-southeast-1.amazonaws.com/andbot-file/BOOT/uInitrd)
 
-zImage	(https://s3-us-west-2.amazonaws.com/andbot/zImage)
+zImage	(https://s3-ap-southeast-1.amazonaws.com/andbot-file/BOOT/zImage)
 
 
 #### Download the upgrade system binary image
-You can download the upgrade binary image; 20151102_trusty.img.gz	(https://s3-us-west-2.amazonaws.com/andbot/20151102_trusty.img.gz)
+You can download the upgrade binary image; 20151106-32g-trusty.img.gz (https://s3-ap-southeast-1.amazonaws.com/andbot-file/trusty/20151106-32g-trusty.img.gz)
 
 #### dd command to converting and formatting according to the sdcard.(change the image name to trusty.img.gz)
 
 ```javascript
 $ sudo -s
-$ gzip -dc 20151102_trusty.img.gz | dd of=/dev/sdb2 bs=1M
+$ gzip -dc 20151106-32g-trusty.img.gz | dd of=/dev/sdb2 bs=1M
 ``` 
 
 After the process finished, reboot the system for useing the new version on the Andbot.
@@ -91,18 +91,3 @@ After the process finished, reboot the system for useing the new version on the 
 
 * Amazon Web Services
 	* https://aws.amazon.com
-
-
-$ Download
- 	
-* A 16GB SD card full SD card binary image 
-	* https://drive.google.com/file/d/0BzChPZVK641AQ0d2R1dNNGpKams/view?usp=sharing
-
-* A	16GB SD card trusty partition image 
-	* https://drive.google.com/file/d/0BzChPZVK641Aay1MNDFGMVlyUHM/view?usp=sharing
-
-* A 32GB SD card full SD card binary image
-	* https://mega.nz/#!6kcHDD6K!T2b6da-y4uHi-AXib0AjWIXi-gHNidbxASKLYxLF_4k
-	
-* A 32GB SD card trusty partition image
-	* https://drive.google.com/file/d/0Bzz9UIPYwzrVSFJiYU9kY3ZqdUU/view?usp=sharing	
