@@ -15,13 +15,13 @@ This document describes how to make an Andbot system in SD card.
 	* It compresses an Andbot system SD card to an image file. 
 	* It is used to recover an Andbot system card or make it from a new SD card.
 	* The file name format is  [release data]-[minimum capacity]-[storage device].img.gz 
-	(ex. 20151102-8g-sdcard.img.gz).
+	(ex. 20161221W-32g-ros-sdcard.img.gz).
 
 * #### Upgrade SD card partition binary image.
 	* It compresses Andbot rootfs partition(trusty) to an image.
 	* It is used to upgrade the trusty partition in an Andbot system SD card.
 	* The file name format is [release date]-trusty.img.gz 
-	(ex. 20151102-trusty.img.gz)
+	(ex. 20151106-32g-trusty.img.gz)
 		
 
 # Full SD card binary image file.
@@ -36,14 +36,14 @@ We provide full SD card binary images file which store in the Simple Storage Ser
 #### Download the full SD card binary image
 You can download the full SD card binary image file 20161221W-32g-ros-sdcard.img.gz (https://s3-ap-southeast-1.amazonaws.com/andbot-file/sdcard/20161221W-32g-ros-sdcard.img.gz)
 
-#### More than 8G bytes Micro SD card.   
-To make an Andbot system SD card. You have to prepare a micro SD card which unless 8G byte.
+#### More than 32G bytes Micro SD card.   
+To make an Andbot system SD card. You have to prepare a micro SD card which unless 32G byte.
 
 #### dd command to converting and formatting according to the SD card.
 
 ```javascript
 $ sudo -s
-$ gzip -dc 20151102-8g-sdcard.img.gz | dd of=/dev/sdb bs=1M
+$ gzip -dc 20161221W-32g-ros-sdcard.img.gz | dd of=/dev/sdb bs=1M
 ```
 
 After the process finished, the Andbot basic system SD card is ready to use.
